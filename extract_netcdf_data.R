@@ -26,6 +26,7 @@ while(dd<=nt){
 }
 xt=xt[,2:ncol(xt)]
 
+# get variable of longitude and latitude
 path="E:\\project\\paper\\Prediksi kenyamanan bola\\data\\data_papua\\temp_2010_2019_10_11_papua.nc"
 ncin=nc_open(path)
 ncin
