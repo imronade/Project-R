@@ -21,13 +21,11 @@ while (i <= colomn[2]) {
 }
 
 # check the dimension of the data
-dim(data_timeseries)
+n <- dim(data_timeseries)
+nt <- n[1]/24 
 
 # make variable time to help process next step
-time <- rep(0:23, 655140)
-
-# add time to data
-test <- cbind(time, data_timeseeries)
+time <- rep(0:23, nt)
 
 # changing colomn names of the data
 colnames(test) <- c("time", "data")
@@ -55,4 +53,4 @@ by_data <- test %>%
 by_data
 
 # save the result to csv
-write.csv(by_data,'E:\\project\\paper\\MyData.csv', row.names = FALSE)
+write.csv(by_data,'E:\\project\\paper\\MyData_Papua.csv', row.names = FALSE)
