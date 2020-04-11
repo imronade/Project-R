@@ -99,9 +99,9 @@ while (i <= 73) {
     geom_path(data = shapefile_df2, aes(x = long, y = lat, group = group),
               color = 'grey50', fill= "gray") +
     labs(title = expression("Konsentrasi Aerosol PM"[10]),
-         subtitle = paste(waktu[i],"                                                                                                                                                                                                                             ",
+         subtitle = paste(waktu[i],"                                                                                                                                                                                                                   ",
                           "INDONESIA"),
-         caption = paste(validasi,"                                                                                                                                                                         ",
+         caption = paste(validasi,"                                                                                                                                                               ",
                          "Diolah oleh: Stasiun GAW Palu \n Sumber Data: ECMWF")) + 
     theme (legend.key.size = unit(1.5, "cm"),
            legend.key.width = unit(0.5,"cm"),
