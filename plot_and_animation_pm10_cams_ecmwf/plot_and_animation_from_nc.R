@@ -92,7 +92,7 @@ while (i <= 73) {
     scale_x_continuous(breaks =c(100,120,140),labels = c("100E","120E","140E"),
                        expand = c(0,0)) +
     theme(plot.title = element_text(hjust = 0.5)) +
-    scale_fill_gradientn(parse(text="PM10 (??g/m^3)"),colours=warna,
+    scale_fill_gradientn(parse(text="PM10 (μg/m^3)"),colours=warna,
                          limits=c(0,160), breaks=seq(0, 150, by=15), oob = scales::squish) +
     geom_path(data = shapefile_df, aes(x = long, y = lat, group = group),
               color = 'black', fill= "gray") +
