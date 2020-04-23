@@ -1,7 +1,8 @@
+## Stasiun GAW Palu
 ## Created by Imron Ade
 ## April, 09 2020
 
-# start to count exexution time
+# start to count execution time
 start.time <- Sys.time()
 
 # load libraries ----------------------------------------------------------
