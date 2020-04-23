@@ -140,7 +140,6 @@ while (i <= 73) {
 gambar <- list.files(pattern = "*_nc.tiff")
 
 # first install ImageMagick (https://imagemagick.org/index.php)
-# then call the following function (which calls "convert", part of ImageMagick I suppose)
 
 # convert tiff to jpeg
 library(jpeg)
